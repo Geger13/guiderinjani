@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinjani Expedition - Taklukkan Puncak 3.726 MDPL</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        rinjani: {
+                            dark: '#1a2e35', 
+                            green: '#2d6a4f', 
+                            light: '#d8f3dc', 
+                            accent: '#e07a5f', 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1589308078059-be1415eab4c3?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <a href="#home" class="flex items-center gap-2 group">
+                        <i class="fa-solid fa-mountain text-3xl text-rinjani-green group-hover:text-rinjani-dark transition-colors duration-300"></i>
+                        <span class="text-2xl font-bold text-rinjani-dark tracking-tight">Pesalam<span class="text-rinjani-green">Trip</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-rinjani-green font-medium transition">Beranda</a>
+                    <a href="#paket" class="text-gray-600 hover:text-rinjani-green font-medium transition">Paket Pendakian</a>
+                    <a href="#menu" class="text-gray-600 hover:text-rinjani-green font-medium transition">Menu Makanan</a>
+                </div>
+                <div>
+                    <a href="https://wa.me/6289525918421" class="bg-rinjani-green text-white px-5 py-2 rounded-full font-medium hover:bg-green-800 transition shadow-lg flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl mx-auto text-white space-y-6 animate-fade-in-up">
+            <span class="uppercase tracking-widest text-sm font-semibold bg-white/20 px-4 py-1 rounded-full backdrop-blur-sm border border-white/30">Official Rinjani Trekking Partner</span>
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+                Taklukkan Puncak Rinjani <br/> <span class="text-rinjani-accent">3.726 MDPL</span> <br/> Bersama Local Guide Berpengalaman
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light">
+                Layanan All-In: Transportasi, Tenda Mewah, dan Makanan Segar di Atas Awan. Anda cukup bawa badan dan semangat!
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center pt-8">
+                <a href="#paket" class="bg-rinjani-accent hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition transform hover:-translate-y-1 shadow-xl">
+                    Lihat Paket Pendakian
+                </a>
+                <a href="https://wa.me/6289525918421" class="bg-transparent border-2 border-white hover:bg-white hover:text-rinjani-dark text-white px-8 py-4 rounded-lg font-bold text-lg transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-rinjani-dark text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 gap-8 text-center">
+            <div>
+                <div class="text-3xl font-bold text-rinjani-accent">10</div>
+                <div class="text-sm text-gray-400">Pendaki Sukses</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-rinjani-accent">24/7</div>
+                <div class="text-sm text-gray-400">Support Tim</div>
+            </div>
+        </div>
+    </div>
+
+    <section id="paket" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-rinjani-dark mb-4">Pilih Paket Pendakian Anda</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan beberapa pilihan paket yang bisa disesuaikan dengan waktu dan stamina Anda. Semua sudah termasuk fasilitas premium.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 items-start">
+                
+                <!-- Paket 2 Hari 1 Malam -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transition-transform transform hover:-translate-y-2">
+                    <img src="assets/danau1.jpeg" alt="Rinjani" class="h-48 w-full object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-rinjani-dark">Paket 2 Hari 1 Malam</h3>
+                        <p class="text-sm text-gray-500 mb-3"></p>
+                        
+                        <div class="bg-rinjani-light/30 p-4 rounded-lg border border-rinjani-light mb-4">
+                            <span class="block text-xs text-gray-500 uppercase font-bold">Open Trip / Grup</span>
+                            <span class="text-2xl font-bold text-rinjani-green">Rp 2.500.000<span class="text-sm font-normal text-gray-600"> / pax</span></span>
+                        </div>
+
+                        <div class="mt-auto">
+                            <a href="https://wa.me/6289525918421?text=Halo,%20saya%20tertarik%20dengan%20Paket%202%20Hari%201%20Malam." class="w-full block text-center bg-rinjani-dark hover:bg-gray-800 text-white font-bold py-3 rounded-lg transition">
+                                Pilih Paket Ini
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paket 3 Hari 2 Malam (Best Seller) -->
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col h-full border-4 border-rinjani-accent relative lg:scale-105">
+                    <div class="absolute top-0 right-0 bg-rinjani-accent text-white px-4 py-1 rounded-bl-lg text-sm font-bold shadow-md z-10">
+                        Paling Laris
+                    </div>
+                    <img src="assets/segaraanak.jpg" alt="Danau Segara Anak" class="h-48 w-full object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-rinjani-dark">Paket 3 Hari 2 Malam</h3>
+                        <p class="text-sm text-gray-500 mb-3"></p>
+                        
+                        <div class="bg-rinjani-light/30 p-4 rounded-lg border border-rinjani-light mb-4">
+                            <span class="block text-xs text-gray-500 uppercase font-bold">Open Trip / Grup</span>
+                            <span class="text-2xl font-bold text-rinjani-green">Rp 3.000.000<span class="text-sm font-normal text-gray-600"> / pax</span></span>
+                        </div>
+
+                        <div class="mt-auto">
+                            <a href="https://wa.me/6289525918421?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Best%20Seller%203%20Hari%202%20Malam." class="w-full block text-center bg-rinjani-accent hover:bg-orange-700 text-white font-bold py-3 rounded-lg transition">
+                                Pilih Paket Ini
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paket 4 Hari 3 Malam -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transition-transform transform hover:-translate-y-2">
+                    <img src="assets/danau2.jpg" alt="Rinjani" class="h-48 w-full object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-rinjani-dark">Paket 4 Hari 3 Malam</h3>
+                        <p class="text-sm text-gray-500 mb-3"></p>
+                        
+                        <div class="bg-rinjani-light/30 p-4 rounded-lg border border-rinjani-light mb-4">
+                            <span class="block text-xs text-gray-500 uppercase font-bold">Open Trip / Grup</span>
+                            <span class="text-2xl font-bold text-rinjani-green">Mulai Rp 3.500.000<span class="text-sm font-normal text-gray-600"> / pax</span></span>
+                        </div>
+
+                        <div class="mt-auto">
+                            <a href="https://wa.me/6289525918421?text=Halo,%20saya%20tertarik%20dengan%20Paket%204%20Hari%203%20Malam." class="w-full block text-center bg-rinjani-dark hover:bg-gray-800 text-white font-bold py-3 rounded-lg transition">
+                                Pilih Paket Ini
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Common Facilities Section -->
+            <div class="mt-20 text-center bg-white p-8 rounded-2xl shadow-xl border">
+                <h4 class="font-bold text-xl mb-6 text-rinjani-dark">Semua Paket Sudah Termasuk Fasilitas Sultan (All-In):</h4>
+                <div class="max-w-4xl mx-auto grid sm:grid-cols-2 gap-x-8 gap-y-4 text-left">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-rinjani-green mt-1"></i>
+                        <span class="text-gray-700">Penjemputan Bandara/Pelabuhan (PP)</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-rinjani-green mt-1"></i>
+                        <span class="text-gray-700">Tiket Masuk TNGR & Asuransi Pendakian</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-rinjani-green mt-1"></i>
+                        <span class="text-gray-700">Tenda Double Layer, Kasur Angin, & Sleeping Bag</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-rinjani-green mt-1"></i>
+                        <span class="text-gray-700">Guide Berlisensi & Porter (Bawa alat camping)</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-rinjani-green mt-1"></i>
+                        <span class="text-gray-700">Makan 3x Sehari + Buah Segar + Kopi/Teh</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-rinjani-green mt-1"></i>
+                        <span class="text-gray-700">Toilet Tent & Alat Makan Higienis</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-500 mt-6">Harga untuk <span class="font-bold">Private Trip</span> dan kustomisasi rute tersedia. Hubungi kami untuk konsultasi gratis!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOD MENU SECTION -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-rinjani-accent font-bold tracking-wider uppercase text-sm">Logistik Premium</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-rinjani-dark mt-2">Santapan Mewah di Atas Awan</h2>
+                <p class="text-gray-600 mt-4">Kami paham lelahnya mendaki. Karena itu, makanan adalah prioritas kami.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Breakfast -->
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-yellow-200 transition">
+                        <i class="fa-solid fa-mug-hot text-yellow-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Sarapan Energi</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Banana Pancake w/ Honey</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Omelet & Toast</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Club Sandwich</li>
+                    </ul>
+                </div>
+
+                <!-- Lunch -->
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-orange-200 transition">
+                        <i class="fa-solid fa-utensils text-orange-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Makan Siang</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Ayam Goreng Lalapan</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Mi Goreng Spesial Telur</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Gado-Gado / Pecel</li>
+                    </ul>
+                </div>
+
+                <!-- Dinner -->
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-red-200 transition">
+                        <i class="fa-solid fa-fire-burner text-red-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Makan Malam</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Kari Ayam Hangat</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Soto Ayam Kampung</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Spaghetti Bolognese</li>
+                    </ul>
+                </div>
+
+                <!-- Snacks -->
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition">
+                        <i class="fa-solid fa-apple-whole text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Snack & Vitamin</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Buah Segar (Nanas/Naga)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Biskuit & Cokelat Bar</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-xs text-rinjani-green"></i> Kopi Lombok & Teh Panas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FOOTER -->
+    <section class="bg-rinjani-green py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-3xl font-bold mb-6">Siap Menikmati Sunrise Terbaik di Asia?</h2>
+            <p class="mb-8 text-lg opacity-90">Slot pendakian terbatas setiap harinya sesuai regulasi Taman Nasional. Amankan jadwal Anda sekarang sebelum penuh.</p>
+            <a href="https://wa.me/6289525918421?text=Halo,%20saya%20ingin%20bertanya%20tentang%20jadwal%20pendakian%20Rinjani." class="inline-block bg-white text-rinjani-green font-bold text-xl px-10 py-4 rounded-full shadow-lg hover:bg-gray-100 hover:scale-105 transition transform">
+                <i class="fa-brands fa-whatsapp mr-2"></i> Booking via WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-rinjani-dark text-gray-400 py-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-bold text-white text-xl">PESALAM<span class="text-rinjani-green">TRIP</span></span>
+                <p class="text-sm mt-2">Basecamp: Kopang.<br>WhatsApp: +62 895-2591-8421</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-tiktok text-xl"></i></a>
+            </div>
+            <div class="text-sm">
+                &copy; 2026 Pesalam Trip. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
